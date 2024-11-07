@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="application.WeatherController">
+    <TextField fx:id="locationInput" promptText="Enter city name" layoutX="20" layoutY="20"/>
+    <Button text="Get Weather" layoutX="200" layoutY="20" onAction="#handleGetWeather"/>
+    <Label fx:id="tempLabel" layoutX="20" layoutY="80"/>
+    <Label fx:id="humidityLabel" layoutX="20" layoutY="110"/>
+    <Label fx:id="windSpeedLabel" layoutX="20" layoutY="140"/>
+    <Label fx:id="conditionLabel" layoutX="20" layoutY="170"/>
+    <ImageView fx:id="weatherIcon" layoutX="250" layoutY="80" fitWidth="100" fitHeight="100"/>
+</AnchorPane>
